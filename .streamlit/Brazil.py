@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 #carregar dados
-df = pd.read_csv('C:/Users/WinJoao/Documents/Projeto - scouts_football/ML - WC/data/results.csv')
+df = pd.read_csv('data/results.csv')
 df = df[df['tournament'] == 'FIFA World Cup']
 df = df[df['date'] < '2026-01-01']
 df = df.replace('Brazil', 'Brasil')# Prepração de dados
